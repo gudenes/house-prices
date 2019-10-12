@@ -16,10 +16,16 @@ We are going to apply a ML model to predict the sales price for the houses.
 
 
 ONGOING TASKS
+
  - Dealing with NaN Values (Gustavo)
+   -- Checking the columns with NaN values, in this case we indentified that was "false" NaN and in fact the missing values is the result from don't have this characteristic, we change those values to "None" and for the Numeric values I use the interpolate function to fill the missing values.
+   
  - Data change (Peter)
+   -- Analyse which categorical variables to turn into dummies based on crosstab and frequency
+   
  - Variables correlation (Martín)
- - Documentation (Gustavo)
+   --a function was created to check correlations. For each pair of columns highly correlated we check the correlation with the target column and the qty of nulls. After that, we decide which one we drop, in this case we Drop "GarageCars","GarageYrBlt", "TotRmsAbvGrd", "1stFlrSF". 
+ 
  
 TO DO TASKS
 
